@@ -1,0 +1,21 @@
+{
+  "meteor": {},
+  "dependencies": {
+    "basePackages": {
+      "iron-router": {},
+      "parsley.js": {}
+    },
+    "packages": {
+      "iron-router": {
+        "git": "https://github.com/EventedMind/iron-router.git",
+        "tag": "v0.6.2",
+        "commit": "ce56e58b45624dce992490f3a1c10f10d3948bae"
+      },
+      "parsley.js": {
+        "git": "https://github.com/amrali/parsleyjs-meteor.git",
+        "tag": "v1.2.3",
+        "commit": "79c55fe96817d6209278ab90dcb3773ee854709a"
+      }
+    }
+  }
+}

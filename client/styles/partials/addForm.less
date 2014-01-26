@@ -1,0 +1,78 @@
+#addForm {
+  border-bottom: 2px solid #449a88;
+  background-color: #f1f1f1;
+  padding: 25px 10px;
+  display: none;
+
+  label {
+    position: relative;
+    float: left;
+    font-size: 11px;
+    color: #444;
+    text-transform: uppercase;
+    margin-top: 8px;
+    margin-left: 8px;
+    z-index: 1;
+    transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s
+  }
+  input {
+ outline: 0;
+ width: 100%;
+ color: #21aa9e;
+ border-radius: 3px;
+ margin: 8px 0;
+transition: all 0.2s;
+-moz-transition: all 0.2s;
+-webkit-transition: all 0.2s;
+  padding: 7px 8px;
+  display: inline-block;
+  border: none;
+  position: relative;
+  }
+}
+
+.twoer {
+  border: 3px solid #FFF;
+  background: #FFF;
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 3px;
+  transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+}
+
+.add-resource {
+  background: #449a88;
+  padding: 12px 20px 10px;
+  border-radius: 3px;
+  width: 170px;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #FFF;
+  margin: 0 auto;
+  border: none;
+  -webkit-box-shadow: inset 0px -2px 0px 0px rgba(0, 0, 0, 0.15), inset 0px 1px 0px 0px rgba(255, 255, 255, 0.9);
+  box-shadow: inset 0px -2px 0px 0px rgba(0, 0, 0, 0.15), inset 0px 1px 0px 0px rgba(255, 255, 255, 0.9);
+
+  &:hover {
+    cursor: pointer;
+    background: lighten(#449a88, 5%);
+  }
+}
+
+ul.parsley-error-list {
+  padding: 0;
+  margin: 0 0 0 5px;
+  font-size: 11px;
+  list-style-type: none;
+  color: rgba(255, 71, 71, 1)
+}
+
+input.parsley-error {
+  background-color: rgba(255, 214, 214, 1);
+}

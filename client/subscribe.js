@@ -1,0 +1,3 @@
+Meteor.subscribe('resources', function () {
+
+})

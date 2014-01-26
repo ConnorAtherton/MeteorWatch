@@ -1,0 +1,37 @@
+nav {
+  padding: 0 10px;
+
+    ul {
+      display: inline-block;
+      list-style: none;
+      margin: 0;
+      padding: 10px 0;
+    }
+    li {
+      padding: 10px 8px;
+      display: inline-block;
+      text-transform: uppercase;
+      min-width: 50px;
+      text-align: center;
+      font-size: 11px;
+      font-weight: 700;
+      border: none;
+      margin-right: .5em;
+
+     &.active {
+        border-radius: 4px;
+        background-color: #449a88;
+        -webkit-box-shadow: inset 0px -2px 0px 0px rgba(0, 0, 0, 0.15), inset 0px 1px 0px 0px rgba(255, 255, 255, 0.9);
+        box-shadow: inset 0px -2px 0px 0px rgba(0, 0, 0, 0.15), inset 0px 1px 0px 0px rgba(255, 255, 255, 0.9);
+
+        > a {
+          color: #FFF;
+
+          &:hover {
+            cursor: pointer
+            color: #449a88;
+          }
+        }
+      }
+    }
+  }

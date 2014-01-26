@@ -1,0 +1,102 @@
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+  <title>Meteor Shower - A delightful sprinkling of meteor resources</title>
+
+</head>
+<body>
+  <header>
+    {{> header}}
+  </header>
+  <section id="addForm">
+    {{> addForm}}
+  </section>
+
+  {{> nav}}
+  {{> layout}}
+</body>
+
+<template name="layout">
+  <section id="resources">
+    {{yield}}
+  </section>
+</template>
+
+<template name="header">
+    <h2>MS</h2>
+    <div class="open">add</div>
+</template>
+
+<template name="addForm">
+  <form id="createResource" parsley-validate>
+    <p class="twoer">
+      <label>Title</label>
+      <input type="text" parsley-trigger="change" required name="title" id="title" placeholder="title"/>
+    </p>
+    <p class="twoer">
+      <label>Link</label>
+      <input type="text" parsley-trigger="change" parsley-type="url" required name="link" id="link" placeholder="Link" />
+     </p>
+     <p class="twoer">
+      <label>Tags - Seperated by a space</label>
+      <input type="text" name="tags" id="tags" placeholder="tags" />
+     </p>
+     <div class="add-resource">Add resource</div>
+   </form>
+</template>
+
+<template name="nav">
+  <nav>
+    <ul>
+      <li class="{{isActive ''}}"><a href="/">All</a></li>
+      <li class="{{isActive 'posts'}}"><a href="/posts">Posts</a></li>
+      <li class="{{isActive 'talks'}}"><a href="/talks">Talks</a></li>
+      <li class="{{isActive 'tutorials'}}"><a href="/tutorials">Tutorials</a></li>
+      <li class="{{isActive 'podcasts'}}"><a href="/podcasts">Podcasts</a></li>
+      <li class="{{isActive 'applications'}}"><a href="/applications">Applications</a></li>
+    </ul>
+  </nav>
+</template>
+
+<template name="resource">
+  <div class="resource">
+    <a href="{{url}}">{{title}}</a>
+    <span class="date">{{prettyDate createdAt}}</span>
+  </div>
+</template>
+
+<template name="all">
+  {{#each resources}}
+    {{> resource}}
+  {{/each}}
+</template>
+
+<template name="posts">
+  {{#each resources}}
+    {{> resource}}
+  {{/each}}
+</template>
+
+<template name="talks">
+  {{#each resources}}
+    {{> resource}}
+  {{/each}}
+</template>
+
+<template name="tutorials">
+  {{#each resources}}
+    {{> resource}}
+  {{/each}}
+</template>
+
+<template name="podcasts">
+  {{#each resources}}
+    {{> resource}}
+  {{/each}}
+</template>
+
+<template name="applications">
+  {{#each resources}}
+    {{> resource}}
+  {{/each}}
+</template>
