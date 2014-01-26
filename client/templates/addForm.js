@@ -23,9 +23,9 @@ Template.addForm.events({
       tags: tags
     });
 
-    $('#addForm').slideUp(200), function () {
+    $('#addForm').slideUp(200, function () {
       $('#createResource')[0].reset();
-    }
+    })
     $('.close:first').text('add').removeClass('close').addClass('open');
   }
 });
