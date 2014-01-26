@@ -1,6 +1,7 @@
 {
   "packages": {
     "iron-router": {},
-    "parsley.js": {}
+    "parsley.js": {},
+    "nprogress": {}
   }
 }

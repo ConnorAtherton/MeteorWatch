@@ -3,7 +3,8 @@
   "dependencies": {
     "basePackages": {
       "iron-router": {},
-      "parsley.js": {}
+      "parsley.js": {},
+      "nprogress": {}
     },
     "packages": {
       "iron-router": {
@@ -15,6 +16,11 @@
         "git": "https://github.com/amrali/parsleyjs-meteor.git",
         "tag": "v1.2.3",
         "commit": "79c55fe96817d6209278ab90dcb3773ee854709a"
+      },
+      "nprogress": {
+        "git": "https://github.com/zhouzhuojie/meteor-nprogress.git",
+        "tag": "v0.0.3",
+        "commit": "ffd1c5dd400af64121197f4e637a215c4b6b1fc7"
       }
     }
   }
